@@ -1,0 +1,34 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		String string=sc.nextLine();
+		char ch[]=string.toCharArray();
+		StringBuilder sb=new StringBuilder();
+		for(char c:ch)
+		{
+		    switch(c)
+		    {
+		        case '1':
+		            sb.append('I');
+		            break;
+		        case '0':
+		            sb.append('O');
+		            break;
+		        default:
+                    sb.append(c);      
+		            
+		            
+		    }
+		}
+		System.out.print(sb.toString());
+		
+
+	}
+}
