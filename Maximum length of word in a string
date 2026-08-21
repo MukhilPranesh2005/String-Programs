@@ -1,0 +1,28 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		String str=sc.nextLine();
+		Scanner word=new Scanner(str);
+		int max=Integer.MIN_VALUE;
+		String ans="";
+		while(word.hasNext())
+		{
+		    String s=word.next();
+		    
+		    if(s.length()>max)
+		    {
+		        max=s.length();
+		        ans=s;
+		    }		    
+		}
+		System.out.print(ans);
+
+	}
+}
